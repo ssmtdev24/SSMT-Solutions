@@ -1,0 +1,29 @@
+#companies {
+  height: 100px;
+  overflow: hidden;
+  position: relative;
+  background-color: rgb(239, 245, 247);
+}
+
+.logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  animation: scroll 10s linear infinite;
+}
+
+.company-logo {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  height: 75%;
+  margin-right: 20px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

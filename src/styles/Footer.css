@@ -1,0 +1,72 @@
+.footer {
+  background-color: rgb(24 49 83);
+  color: #fff;
+  padding: 20px 40px 20px 40px;
+  margin-top: 60px;
+}
+
+.footer-column h3 {
+  color: #fff;
+}
+
+.company-name {
+  font-family: "Jacques Francois Shadow", serif;
+  color: #fff;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h3 {
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  font-size: 1.5em;
+}
+
+.social-icons a {
+  color: rgb(195, 209, 216);
+  margin-right: 15px;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 5px;
+}
+
+ul li a {
+  color: rgb(195, 209, 216);
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline;
+}
+
+.copyright {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.copyright-text {
+  color: rgb(195, 209, 216);
+  font-size: 0.9em;
+}
