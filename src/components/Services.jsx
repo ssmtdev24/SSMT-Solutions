@@ -14,11 +14,12 @@ function Services() {
     <section id="services">
       <h2 className="services-heading">Our Services</h2>
       <div className="service-grid">
-        {[...Array(6)].map((_, index) => (
+        {[...Array(4)].map((_, index) => (
           <div
             key={index}
             className={`service-box ${expandedBox === index ? "expanded" : ""}`}
-            onClick={() => toggleBox(index)}
+
+            // onClick={() => toggleBox(index)}
           >
             {/* <p className="service-text">Service {index + 1} Details</p> */}
             <img

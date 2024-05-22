@@ -21,3 +21,25 @@
   color: rgb(255, 255, 255);
   text-shadow: 4px 4px 4px rgba(35, 59, 63, 0.9);
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .hero {
+    height: 400px;
+  }
+
+  .hero-heading {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 300px;
+  }
+
+  .hero-heading {
+    font-size: 2em;
+    padding: 0 20px; /* Add padding to avoid text touching the screen edges */
+  }
+}

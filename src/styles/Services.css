@@ -1,6 +1,6 @@
 #services {
   margin-top: 30px;
-  padding: 30px 70px;
+  padding: 30px 20px; /* Adjust padding for better responsiveness */
 }
 
 .services-heading {
@@ -11,18 +11,20 @@
 .service-grid {
   margin-top: 20px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Adjust columns for responsiveness */
+  gap: 20px; /* Add space between rows and columns */
 }
 
 .service-box {
   border: 1px solid #ccc;
   cursor: pointer;
   transition: all 0.3s ease;
-  margin: 0 auto;
   text-align: center;
   height: 200px;
-  width: 250px;
+  width: 100%; /* Make the width 100% to fit the grid cell */
 }
 
 .service-box:hover {
@@ -35,10 +37,56 @@
 }
 
 .service-box.expanded {
-  grid-column: span 3;
+  grid-column: span 3; /* Adjust the span to match your layout needs */
 }
 
 .service-image {
   width: 100%;
+  height: 100%;
   object-fit: cover;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .services-heading {
+    font-size: 2em;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(250px, 1fr)
+    ); /* Adjust for tablet screens */
+    gap: 15px; /* Adjust gap for smaller screens */
+  }
+
+  .service-box {
+    height: 180px; /* Adjust height for smaller screens */
+  }
+
+  .service-box.expanded {
+    grid-column: span 2; /* Adjust span for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .services-heading {
+    font-size: 1.5em;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(200px, 1fr)
+    ); /* Adjust for mobile screens */
+    gap: 10px; /* Adjust gap for smaller screens */
+  }
+
+  .service-box {
+    height: 150px; /* Adjust height for smaller screens */
+  }
+
+  .service-box.expanded {
+    grid-column: span 1; /* Adjust span for smaller screens */
+  }
 }
