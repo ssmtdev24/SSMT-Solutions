@@ -14,9 +14,9 @@ function Navbar() {
         <li>
           <a href="#services">Services</a>
         </li>
-        <li>
+        {/* <li>
           <a href="#hire">Hire Developers</a>
-        </li>
+        </li> */}
         <li>
           <a href="#contact">Contact Us</a>
         </li>

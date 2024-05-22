@@ -38,3 +38,19 @@ h3 {
 p {
   color: #666;
 }
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .story-box {
+    flex: 1 1 calc(50% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .success-heading {
+    font-size: 2em;
+  }
+  .story-box {
+    flex: 1 1 100%;
+  }
+}

@@ -42,3 +42,33 @@
   margin: 0;
   color: #666;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .motivation-heading {
+    font-size: 1.5em;
+  }
+  .number-box {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .number {
+    font-size: 2.5em;
+  }
+  .text {
+    font-size: 1.2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .motivation-heading {
+    font-size: 1.2em;
+  }
+  .number {
+    font-size: 2em;
+  }
+  .text {
+    font-size: 1em;
+  }
+}
